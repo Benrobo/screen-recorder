@@ -1,0 +1,148 @@
+
+:root{
+    --fitness-bg: #1e2225;
+    --fitness-bg2:#191a1c;
+    --fitness-bg3:#131414;
+    --fitness-comp: #10e697;
+    --fitness-comp2: rgba(17, 183, 122, 0.856);
+    --fitness-comp3: rgba(17, 183, 122, 0.4);
+    --fitness-text: #fff;
+    --fitness-blue: #00a2ffd7;
+}
+
+
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--fitness-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* .main{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .body .bx .btn.start{
+    background: var(--fitness-bg);
+    border: 2px solid var(--fitness-comp);
+    color: var(--fitness-comp);
+    padding: 10px 20px;
+}
+.main .body .bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main .body .bx .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .body .timer-cont{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.main .body .timer-cont .timer{
+    font-size: 70px;
+    font-weight: 500;
+    color: var(--fitness-comp);
+}
+
+
+.main .body .timer-cont .stop{
+    padding: 10px 20px;
+    display: none;
+}
+
+.main .body .screen-cont{
+    width: 600px;
+    height: auto;
+    padding-inline-end: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: none;
+}
+
+.main .body .screen-cont .screen{
+    width: 100%;
+    height: 300px;
+    background: #000;
+    margin-bottom: 10px;
+} */
+
+
+
+.main{
+    width:100%;
+    height:100vh;
+    position: relative;
+    
+    
+}
+
+.main .top-head{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--fitness-bg2);
+}
+
+.main .top-head .btn{
+    padding: 12px 20px;
+    margin: 15px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .video-cont{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    padding: 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .video-cont video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border: 3px solid var(--fitness-comp);
+    height: 100%;
+    margin: 0px auto;
+}

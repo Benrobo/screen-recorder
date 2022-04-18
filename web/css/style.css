@@ -1,0 +1,162 @@
+
+:root{
+    --fitness-bg: #1e2225;
+    --fitness-bg2:#191a1c;
+    --fitness-bg3:#131414;
+    --fitness-comp: #10e697;
+    --fitness-comp2: rgba(17, 183, 122, 0.856);
+    --fitness-comp3: rgba(17, 183, 122, 0.4);
+    --fitness-text: #fff;
+    --fitness-blue: #00a2ffd7;
+}
+
+
+@font-face {
+    font-family: Poppin;
+    src: url("../Poppins-Regular.ttf");
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--fitness-bg2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: Poppin;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+.main .top-head{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 12px;
+}
+
+.main .top-head .line{
+    width: 100px;
+    height: 2px;
+    background: var(--fitness-comp);
+    color: var(--fitness-comp);
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+
+.main .video-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+.main .video-cont .video-elm{
+    width: 600px;
+    height: 300px;
+    background: #000;
+}
+
+
+.main .bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.main .bottom .bx{
+    width: 160px;
+    height: 150px;
+    background: var(--fitness-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--fitness-text);
+    cursor: pointer;
+}
+
+.main .bottom .bx .icon{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--fitness-text);
+    color: #000;
+}
+
+.main .bottom .bx:hover{
+    border: 2px solid var(--fitness-comp);
+    
+}
+
+.main .bottom .bx:hover > .icon{
+    background: var(--fitness-comp3);
+    color: var(--fitness-comp);
+}
+
+
+
+.more-info{
+    width: 200px;
+    height: auto;
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--fitness-bg);
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+
+.more-info .action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.more-info .action .stopbtn{
+    width: 100%;
+    margin-top: 10px;
+    color: red;
+    background: rgb(255, 0, 0, .5);
+}
+
+.more-info .action .downloadbtn{
+    width: 100%;
+    margin-top: 10px;
+    background: var(--fitness-comp3);
+    color: var(--fitness-comp);
+}
+
+.more-info .action .downloadLink{
+    display: none;
+}
