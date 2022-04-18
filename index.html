@@ -4,50 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./bootstrap.css">
-    <link rel="stylesheet" href="./style.css">
+    <title>Screen Recorder</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     
 
-    <main class="main">
+    <div class="main">
+        <div class="top-head">
+            <span class="line"></span>
+            <h4>Screen Recorder</h4>
+            <span class="line"></span>
+        </div>
 
-        <div class="head">
-            <h2>Screen Recorder</h2>
+        <!-- video cont -->
+        <div class="video-cont">
             <br>
+            <video class="video-elm" autoplay muted></video>
         </div>
 
-        <div class="body">
-            <div class="bx record-scr">
-                <button class="btn start select-screen">Select Screen</button>
+
+        <div class="bottom">
+            <div class="bx audio-record" data-type="audio">
+                <ion-icon name="musical-notes-outline" class="icon"></ion-icon>
                 <br>
-                <div class="flex d-flex">
-                    <input type="checkbox" class="audio select-audio">
-                    record audio
-                </div>
+                <small>Record Audio</small>
             </div>
-
-            <div class="timer-cont">
-                <div class="timer">
-                    00:00:00
-                </div>
+            <div class="bx video-record" data-type="video">
+                <ion-icon name="videocam-outline" class="icon"></ion-icon>
                 <br>
-                <div class="bx">
-                    <button class="stop btn btn-danger stop-record">Stop Recording</button>
-                </div>
+                <small>Record Video</small>
             </div>
-
-            <div class="screen-cont">
-                <div class="screen"></div>
-
-                <button class="btn btn-primary download-btn">Download Video</button>
+            <div class="bx screen-record" data-type="screen">
+                <ion-icon name="desktop-outline" class="icon"></ion-icon>
+                <br>
+                <small>Record Screen</small>
             </div>
         </div>
-    </main>
+    </div>
+    
+    <div class="more-info">
+        <div class="action">
+            <button class="btn stopbtn" disabled>Stop Record</button>
+            <a class="btn downloadLink">
+                <button class="btn downloadbtn">
+                    Download Record
+                </button>
+            </a>
+        </div>
+    </div>
 
 
-    <script src="./index.js"></script>
-
+    <script src="./js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
